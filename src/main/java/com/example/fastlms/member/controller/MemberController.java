@@ -25,13 +25,13 @@ public class MemberController {
     
     private final MemberService memberService;
     private final TakeCourseService takeCourseService;
-    
+
     @RequestMapping("/member/login")
     public String login() {
-        
+
         return "member/login";
     }
-    
+
     @GetMapping("/member/find-password")
     public String findPassword() {
         
@@ -49,7 +49,7 @@ public class MemberController {
     
     @GetMapping("/member/register")
     public String register() {
-        
+
         return "member/register";
     }
     

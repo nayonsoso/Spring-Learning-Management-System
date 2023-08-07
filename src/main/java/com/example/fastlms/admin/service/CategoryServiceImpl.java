@@ -33,7 +33,6 @@ public class CategoryServiceImpl implements CategoryService {
     public boolean add(String categoryName) {
         
         //카테고리명이 중복인거 체크
-        
         Category category = Category.builder()
                 .categoryName(categoryName)
                 .usingYn(true)

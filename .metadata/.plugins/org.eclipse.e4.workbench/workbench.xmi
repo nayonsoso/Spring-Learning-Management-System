@@ -1463,7 +1463,7 @@
     <tags>categoryTag:Version Control (Team)</tags>
   </descriptors>
   <descriptors xmi:id="_3fT20DKnEe6BX_AKIG3gYA" elementId="org.eclipse.team.ui.GenericHistoryView" label="History" iconURI="platform:/plugin/org.eclipse.team.ui/icons/full/eview16/history_view.png" tooltip="" allowMultiple="true" category="Version Control (Team)" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.team.internal.ui.history.GenericHistoryView"/>
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.team.internal.ui.loginHistory.GenericHistoryView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.team.ui"/>
     <tags>View</tags>
     <tags>categoryTag:Version Control (Team)</tags>
@@ -1660,8 +1660,8 @@
   <commands xmi:id="_2eiWUDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ei9YDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_2edd2TKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ei9YTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.toggleWordWrap" commandName="Toggle Word Wrap" description="Toggle word wrap in the current text editor" category="_2edd0zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2ejkcDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.ResetQuickdiffBaseline" commandName="Reset quickdiff baseline" category="_2eeE9zKnEe6BX_AKIG3gYA">
-    <parameters xmi:id="_2ejkcTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.ResetQuickdiffBaselineTarget" name="Reset target (HEAD, HEAD^1)" optional="false"/>
+  <commands xmi:id="_2ejkcDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.ResetQuickdiffBaseline" commandName="Reset quickdiff baseline" category="_2eeE9zKnEe6BX_AKIG3gYA">
+    <parameters xmi:id="_2ejkcTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.ResetQuickdiffBaselineTarget" name="Reset target (HEAD, HEAD^1)" optional="false"/>
   </commands>
   <commands xmi:id="_2ejkcjKnEe6BX_AKIG3gYA" elementId="org.eclipse.oomph.p2.ui.SearchRequirements" commandName="Search Requirements" category="_2eeE6TKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ejkczKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.correction.convertLocalToField.assist" commandName="Quick Assist - Convert local variable to field" description="Invokes quick assist and selects 'Convert local variable to field'" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
@@ -1676,7 +1676,7 @@
   <commands xmi:id="_2ejkfDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.delimiter.unix" commandName="Convert Line Delimiters to Unix (LF, \n, 0A, &#xb6;)" description="Converts the line delimiters to Unix (LF, \n, 0A, &#xb6;)" category="_2edd4DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ejkfTKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.references.in.working.set" commandName="References in Working Set" description="Search for references to the selected element in a working set" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ejkfjKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.working.set" commandName="Read Access in Working Set" description="Search for read references to the selected element in a working set" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2ejkfzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.Edit" commandName="Edit Commit" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2ejkfzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.Edit" commandName="Edit Commit" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ejkgDKnEe6BX_AKIG3gYA" elementId="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard" commandName="Eclipse Marketplace" description="Show the Eclipse Marketplace wizard" category="_2eeE9zKnEe6BX_AKIG3gYA">
     <parameters xmi:id="_2ejkgTKnEe6BX_AKIG3gYA" elementId="trigger" name="trigger"/>
   </commands>
@@ -1732,7 +1732,7 @@
   <commands xmi:id="_2emAsDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.clean" commandName="Clean..." category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emAsTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.rename" commandName="Rename" description="Rename the selected item" category="_2edd4DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emAsjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.project.buildAll" commandName="Build All" description="Build all projects" category="_2eeE4zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2emAszKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.OpenInTextEditorCommand" commandName="Open in Text Editor" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2emAszKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.OpenInTextEditorCommand" commandName="Open in Text Editor" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emAtDKnEe6BX_AKIG3gYA" elementId="org.eclipse.eclemma.ui.dumpExecutionData" commandName="Dump Execution Data" category="_2edd3zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emAtTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.debug.ui.commands.ToggleLambdaEntryBreakpoint" commandName="Toggle &amp;Lambda Entry Breakpoint" description="Creates or removes a lambda entry breakpoint  " category="_2eeE5zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emAtjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.cut.line.to.beginning" commandName="Cut to Beginning of Line" description="Cut to the beginning of a line of text" category="_2edd2TKnEe6BX_AKIG3gYA"/>
@@ -1759,7 +1759,7 @@
   <commands xmi:id="_2emnzTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.Commit" commandName="Commit..." category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emnzjKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.inline" commandName="Inline" description="Inline a constant, local variable or method" category="_2edd5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emnzzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.shiftRight" commandName="Shift Right" description="Shift a block of text to the right" category="_2edd0zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2emn0DKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation history" category="_2edd3DKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2emn0DKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation loginHistory" category="_2edd3DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emn0TKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.implementors.in.working.set" commandName="Implementors in Working Set" description="Search for implementors of the selected interface in a working set" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emn0jKnEe6BX_AKIG3gYA" elementId="org.eclipse.eclemma.ui.workbenchShortcut.coverage" commandName="Coverage Eclipse Application" description="Coverage Eclipse Application" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2emn0zKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.removeTrailingWhitespace" commandName="Remove Trailing Whitespace" description="Removes the trailing whitespace of each line" category="_2edd4DKnEe6BX_AKIG3gYA"/>
@@ -1828,7 +1828,7 @@
   <commands xmi:id="_2eoc9zKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.file.import" commandName="Import" description="Import" category="_2edd4DKnEe6BX_AKIG3gYA">
     <parameters xmi:id="_2eoc-DKnEe6BX_AKIG3gYA" elementId="importWizardId" name="Import Wizard"/>
   </commands>
-  <commands xmi:id="_2eoc-TKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.Merge" commandName="Merge" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eoc-TKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.Merge" commandName="Merge" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eoc-jKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.switchToEditor" commandName="Switch to Editor" description="Switch to an editor" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eoc-zKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.find.broken.nls.keys" commandName="Find Broken Externalized Strings" description="Finds undefined, duplicate and unused externalized string keys in property files" category="_2edd2zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eoc_DKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.help.dynamicHelp" commandName="Show Context Help" description="Open the contextual help" category="_2eeE4TKnEe6BX_AKIG3gYA"/>
@@ -1849,7 +1849,7 @@
   <commands xmi:id="_2epEBDKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.implementors.in.project" commandName="Implementors in Project" description="Search for implementors of the selected interface in the enclosing project" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2epEBTKnEe6BX_AKIG3gYA" elementId="org.eclipse.eclemma.ui.relaunchSession" commandName="Relaunch Coverage Session" category="_2edd3zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2epEBjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.GarbageCollect" commandName="Collect Garbage" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2epEBzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.CompareWithWorkingTree" commandName="Compare with Working Tree" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2epEBzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.CompareWithWorkingTree" commandName="Compare with Working Tree" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2epECDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.Branch" commandName="Branch" description="Check out, rename, create, or delete a branch in a git repository" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eprEDKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.xml.ui.previousSibling" commandName="Previous Sibling" description="Go to Previous Sibling" category="_2edd0zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eprETKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.RepositoriesViewConfigurePush" commandName="Configure Push..." category="_2eeE6jKnEe6BX_AKIG3gYA"/>
@@ -1862,7 +1862,7 @@
   <commands xmi:id="_2eprFzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.stash.apply" commandName="Apply Stashed Changes" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eprGDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.debug.ui.commands.Inspect" commandName="Inspect" description="Inspect result of evaluating selected text" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eprGTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.goto.columnNext" commandName="Next Column" description="Go to the next column" category="_2edd2TKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eprGjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.Squash" commandName="Squash Commits" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eprGjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.Squash" commandName="Squash Commits" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSIDKnEe6BX_AKIG3gYA" elementId="org.eclipse.search.ui.performTextSearchWorkingSet" commandName="Find Text in Working Set" description="Searches the files in the working set for specific text." category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSITKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.occurrences.in.file.quickMenu" commandName="Show Occurrences in File Quick Menu" description="Shows the Occurrences in File quick menu" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSIjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.goto.wordNext" commandName="Next Word" description="Go to the next word" category="_2edd2TKnEe6BX_AKIG3gYA"/>
@@ -1875,7 +1875,7 @@
   <commands xmi:id="_2eqSKTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.ReplaceWithTheirs" commandName="Replace Conflicting Files with Their Revision" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSKjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.toggleShowKeys" commandName="Toggle Show Key Bindings" description="Shows key binding when command is invoked" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSKzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.debug.ui.commands.Watch" commandName="Watch" description="Create new watch expression" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eqSLDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.Reword" commandName="Reword Commit" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eqSLDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.Reword" commandName="Reword Commit" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSLTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.OpenCommit" commandName="Open Git Commit" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSLjKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.server.stop" commandName="Stop" description="Stop the server" category="_2edd3TKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSLzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.help.displayHelp" commandName="Display Help" description="Display a Help topic" category="_2eeE4TKnEe6BX_AKIG3gYA">
@@ -1890,7 +1890,7 @@
   <commands xmi:id="_2eqSNzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.extract.local.variable" commandName="Extract Local Variable" description="Extracts an expression into a new local variable and uses the new local variable" category="_2edd5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSODKnEe6BX_AKIG3gYA" elementId="org.eclipse.oomph.p2.ui.ExploreRepository" commandName="Explore Repository" category="_2eeE6TKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSOTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.InstallLfsLocal" commandName="Enable LFS locally" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eqSOjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ltk.ui.refactor.show.refactoring.history" commandName="Open Refactoring History " description="Opens the refactoring history" category="_2edd5jKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eqSOjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ltk.ui.refactor.show.refactoring.loginHistory" commandName="Open Refactoring History " description="Opens the refactoring loginHistory" category="_2edd5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSOzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.hierarchy" commandName="Read Access in Hierarchy" description="Search for read references of the selected element in its hierarchy" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSPDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals" commandName="Quick Fix" description="Suggest possible fixes for a problem" category="_2edd0zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSPTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.views.log.jdt.showinconsole" commandName="&amp;Show In Console" description="Show Stack Trace in Console View" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
@@ -1898,8 +1898,8 @@
   <commands xmi:id="_2eqSPzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.nextPerspective" commandName="Next Perspective" description="Switch to the next perspective" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSQDKnEe6BX_AKIG3gYA" elementId="org.eclipse.debug.ui.commands.console.clear" commandName="Clear Console" description="Clear Console" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eqSQTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.working.set" commandName="Write Access in Working Set" description="Search for write references to the selected element in a working set" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eqSQjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.ShowVersions" commandName="Open this Version" category="_2eeE9zKnEe6BX_AKIG3gYA">
-    <parameters xmi:id="_2eqSQzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.CompareMode" name="Compare mode"/>
+  <commands xmi:id="_2eqSQjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.ShowVersions" commandName="Open this Version" category="_2eeE9zKnEe6BX_AKIG3gYA">
+    <parameters xmi:id="_2eqSQzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.CompareMode" name="Compare mode"/>
   </commands>
   <commands xmi:id="_2eq5MDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_2edd3DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5MTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.quickAccess" commandName="Find Actions" description="Quickly access UI elements" category="_2edd5DKnEe6BX_AKIG3gYA"/>
@@ -1927,7 +1927,7 @@
   </commands>
   <commands xmi:id="_2eq5RzKnEe6BX_AKIG3gYA" elementId="org.eclipse.datatools.sqltools.result.removeAllInstances" commandName="Remove All Visible Results" category="_2eeE4jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5SDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.search.implement.occurrences" commandName="Search Implement Occurrences in File" description="Search for implement occurrences of a selected type" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eq5STKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.DeleteBranch" commandName="Delete Branch" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eq5STKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.DeleteBranch" commandName="Delete Branch" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5SjKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.contentAssist.contextInformation" commandName="Context Information" description="Show Context Information" category="_2edd0zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5SzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.file.saveAs" commandName="Save As" description="Save the current contents to another location" category="_2edd4DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5TDKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.read.access.in.workspace" commandName="Read Access in Workspace" description="Search for read references to the selected element in the workspace" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
@@ -1961,7 +1961,7 @@
   <commands xmi:id="_2eq5ZzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.SkipRebase" commandName="Skip commit and continue" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5aDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.replace.invocations" commandName="Replace Invocations" description="Replace invocations of the selected method" category="_2edd5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eq5aTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.hierarchy" commandName="Declaration in Hierarchy" description="Search for declarations of the selected element in its hierarchy" category="_2eeE5jKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eq5ajKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.SetQuickdiffBaseline" commandName="Set quickdiff baseline" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eq5ajKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.SetQuickdiffBaseline" commandName="Set quickdiff baseline" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHUDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.undo" commandName="Undo" description="Undo the last operation" category="_2edd0zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHUTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.file.newQuickMenu" commandName="New menu" description="Open the New menu" category="_2edd4DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHUjKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.correction.addSuppressWarnings" commandName="Quick Fix - Add @SuppressWarnings" description="Invokes quick fix and selects 'Add @SuppressWarnings' " category="_2edd2zKnEe6BX_AKIG3gYA"/>
@@ -1992,7 +1992,7 @@
   <commands xmi:id="_2esHajKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.JavaPerspective" commandName="Java" description="Show the Java perspective" category="_2eeE7DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHazKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.indent" commandName="Correct Indentation" description="Corrects the indentation of the selected lines" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHbDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.ide.copyConfigCommand" commandName="Copy Configuration Data To Clipboard" description="Copies the configuration data (system properties, installed bundles, etc) to the clipboard." category="_2edd0zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2esHbTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation history" category="_2edd3DKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2esHbTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation loginHistory" category="_2edd3DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHbjKnEe6BX_AKIG3gYA" elementId="org.eclipse.search.ui.performTextSearchProject" commandName="Find Text in Project" description="Searches the files in the project for specific text." category="_2eeE5jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHbzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.project.rebuildAll" commandName="Rebuild All" description="Rebuild all projects" category="_2eeE4zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2esHcDKnEe6BX_AKIG3gYA" elementId="org.eclipse.gef.zoom_in" commandName="Zoom In" description="Zoom In" category="_2eeE7jKnEe6BX_AKIG3gYA"/>
@@ -2021,7 +2021,7 @@
   </commands>
   <commands xmi:id="_2esuczKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.RepositoriesToggleBranchCommit" commandName="Toggle Latest Branch Commit" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2etVcDKnEe6BX_AKIG3gYA" elementId="org.eclipse.tm.terminal.paste" commandName="Paste" category="_2eeE5TKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2etVcTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.PushCommit" commandName="Push Commit..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2etVcTKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.PushCommit" commandName="Push Commit..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2etVcjKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.correction.assignToField.assist" commandName="Quick Assist - Assign to var" description="Invokes quick assist and selects 'Assign to var'" category="_2edd2zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2etVczKnEe6BX_AKIG3gYA" elementId="org.eclipse.jpt.jpa.ui.convertJavaGenerators" commandName="Move Java Generators to XML..." category="_2eeE7zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2etVdDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.ide.showInSystemExplorer" commandName="Show In (System Explorer)" description="Show in system's explorer (file manager)" category="_2edd3DKnEe6BX_AKIG3gYA">
@@ -2138,8 +2138,8 @@
   <commands xmi:id="_2evKwzKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.file.close" commandName="Close" description="Close the active editor" category="_2edd4DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evKxDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.surround.with.try.catch" commandName="Surround with try/catch Block" description="Surround the selected text with a try/catch block" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evKxTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.goto.previous.member" commandName="Go to Previous Member" description="Move the caret to the previous member of the compilation unit" category="_2edd3DKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2evKxjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.Reset" commandName="Reset..." category="_2eeE9zKnEe6BX_AKIG3gYA">
-    <parameters xmi:id="_2evKxzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.ResetMode" name="Reset mode" optional="false"/>
+  <commands xmi:id="_2evKxjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.Reset" commandName="Reset..." category="_2eeE9zKnEe6BX_AKIG3gYA">
+    <parameters xmi:id="_2evKxzKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.ResetMode" name="Reset mode" optional="false"/>
   </commands>
   <commands xmi:id="_2evKyDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.navigate.previousSubTab" commandName="Previous Sub-Tab" description="Switch to the previous sub-tab" category="_2edd3DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evKyTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals" commandName="Generate hashCode() and equals()" description="Generates hashCode() and equals() methods for the type" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
@@ -2203,7 +2203,7 @@
   <commands xmi:id="_2evx4TKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.sse.ui.add.block.comment" commandName="Add Block Comment" description="Add Block Comment" category="_2edd0zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evx4jKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.showSystemMenu" commandName="Show System Menu" description="Show the system menu" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evx4zKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.debug.ui.commands.AllInstances" commandName="All Instances" description="View all instances of the selected type loaded in the target VM" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2evx5DKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.OpenInCommitViewerCommand" commandName="Open in Commit Viewer" description="Opens selected commit(s) in Commit Viewer(s)" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2evx5DKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.OpenInCommitViewerCommand" commandName="Open in Commit Viewer" description="Opens selected commit(s) in Commit Viewer(s)" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evx5TKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.correction.assignInTryWithResources.assist" commandName="Quick Assist - Assign to variable in new try-with-resources block" description="Invokes quick assist and selects 'Assign to variable in new try-with-resources block'" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2evx5jKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.toggle.comment" commandName="Toggle Comment" description="Toggle comment the selected lines" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewYwDKnEe6BX_AKIG3gYA" elementId="org.eclipse.m2e.actions.LifeCycleTest.run" commandName="Run Maven Test" description="Run Maven Test" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
@@ -2240,7 +2240,7 @@
   <commands xmi:id="_2ewY3jKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.team.PushTags" commandName="Push Tags..." category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewY3zKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.ContinueRebase" commandName="Continue Rebase" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewY4DKnEe6BX_AKIG3gYA" elementId="org.eclipse.help.ui.closeTray" commandName="Close User Assistance Tray" description="Close the user assistance tray containing context help information and cheat sheets." category="_2eeE4TKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2ewY4TKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.CreatePatch" commandName="Create Patch..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2ewY4TKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.CreatePatch" commandName="Create Patch..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewY4jKnEe6BX_AKIG3gYA" elementId="org.eclipse.debug.ui.commands.Resume" commandName="Resume" description="Resume" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewY4zKnEe6BX_AKIG3gYA" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.toggle.comment" commandName="Toggle Comment" description="Toggle comment the selected lines" category="_2edd2zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ewY5DKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.file.restartWorkbench" commandName="Restart" description="Restart the workbench" category="_2edd4DKnEe6BX_AKIG3gYA"/>
@@ -2390,7 +2390,7 @@
   <commands xmi:id="_2eyN8zKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.FetchGitHubPR" commandName="Fetch GitHub Pull Request" category="_2eeE6jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eyN9DKnEe6BX_AKIG3gYA" elementId="org.eclipse.jpt.jpa.eclipselink.ui.convertJavaConverters" commandName="Move Java Converters to XML..." category="_2eeE7zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eyN9TKnEe6BX_AKIG3gYA" elementId="org.eclipse.buildship.ui.commands.openrunconfiguration" commandName="Open Gradle Run Configuration" description="Opens the Run Configuration for the selected Gradle tasks" category="_2eeE5zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2eyN9jKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.DeleteTag" commandName="&amp;Delete Tag" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2eyN9jKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.DeleteTag" commandName="&amp;Delete Tag" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eyN9zKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.remove.occurrence.annotations" commandName="Remove Occurrence Annotations" description="Removes the occurrence annotations from the current editor" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eyN-DKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.pinEditor" commandName="Pin Editor" description="Pin the current editor" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2eyN-TKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.edit.text.goto.pageUp" commandName="Page Up" description="Go up one page" category="_2edd2TKnEe6BX_AKIG3gYA"/>
@@ -2462,7 +2462,7 @@
   <commands xmi:id="_2ey1GzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.correction.convertAnonymousToLocal.assist" commandName="Quick Assist - Convert anonymous to local class" description="Invokes quick assist and selects 'Convert anonymous to local class'" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1HDKnEe6BX_AKIG3gYA" elementId="org.eclipse.compare.copyLeftToRight" commandName="Copy from Left to Right" description="Copy Current Change from Left to Right" category="_2edd4jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1HTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.project.openProject" commandName="Open Project" description="Open a project" category="_2eeE4zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2ey1HjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.ShowBlame" commandName="Show Revision Information" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2ey1HjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.ShowBlame" commandName="Show Revision Information" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1HzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.correction.addSuppressWarnings" commandName="Quick Fix - Add @SuppressWarnings" description="Invokes quick fix and selects 'Add @SuppressWarnings' " category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1IDKnEe6BX_AKIG3gYA" elementId="org.eclipse.jpt.jpa.ui.persistentAttributeAddToXml" commandName="Add Attribute to XML" category="_2eeE8zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1ITKnEe6BX_AKIG3gYA" elementId="org.eclipse.tips.ide.command.trim.open" commandName="Tip of the Day" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
@@ -2471,7 +2471,7 @@
     <parameters xmi:id="_2ey1JDKnEe6BX_AKIG3gYA" elementId="type" name="type" optional="false"/>
   </commands>
   <commands xmi:id="_2ey1JTKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.project.properties" commandName="Properties" description="Display the properties of the selected item's project " category="_2eeE4zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2ey1JjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.CompareVersionsInTree" commandName="Compare in Tree" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2ey1JjKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.CompareVersionsInTree" commandName="Compare in Tree" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2ey1JzKnEe6BX_AKIG3gYA" elementId="org.eclipse.jpt.jpa.ui.persistentTypeMapAs" commandName="Map As" category="_2eeE8zKnEe6BX_AKIG3gYA">
     <parameters xmi:id="_2ey1KDKnEe6BX_AKIG3gYA" elementId="persistentTypeMappingKey" name="mapping key" optional="false"/>
   </commands>
@@ -2639,7 +2639,7 @@
   <commands xmi:id="_2e0qdTKnEe6BX_AKIG3gYA" elementId="org.eclipse.jdt.ui.edit.text.java.uncomment" commandName="Uncomment" description="Uncomment the selected Java comment lines" category="_2eeE8jKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2e0qdjKnEe6BX_AKIG3gYA" elementId="org.eclipse.e4.ui.importer.configureProject" commandName="Configure and Detect Nested Projects..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2e0qdzKnEe6BX_AKIG3gYA" elementId="org.eclipse.eclemma.ui.selectActiveSession" commandName="Select Active Session..." category="_2edd3zKnEe6BX_AKIG3gYA"/>
-  <commands xmi:id="_2e0qeDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.history.CompareVersions" commandName="Compare with Each Other" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
+  <commands xmi:id="_2e0qeDKnEe6BX_AKIG3gYA" elementId="org.eclipse.egit.ui.loginHistory.CompareVersions" commandName="Compare with Each Other" category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2e0qeTKnEe6BX_AKIG3gYA" elementId="org.eclipse.equinox.p2.ui.sdk.install" commandName="Install New Software..." category="_2eeE9zKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2e0qejKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_2edd5DKnEe6BX_AKIG3gYA"/>
   <commands xmi:id="_2e1RQDKnEe6BX_AKIG3gYA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar" commandName="Run Last Launched External Tool" description="Runs the last launched external Tool" category="_2eeE5zKnEe6BX_AKIG3gYA"/>

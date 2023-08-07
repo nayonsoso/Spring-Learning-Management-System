@@ -2,6 +2,8 @@ package com.example.fastlms.admin.controller;
 
 
 import com.example.fastlms.course.controller.BaseController;
+import com.example.fastlms.history.dto.HistoryDto;
+import com.example.fastlms.history.service.HistoryService;
 import com.example.fastlms.member.service.MemberService;
 import com.example.fastlms.admin.dto.MemberDto;
 import com.example.fastlms.admin.model.MemberParam;
@@ -12,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -19,7 +22,8 @@ import java.util.List;
 public class AdminMemberController extends BaseController {
     
     private final MemberService memberService;
-    
+    private final HistoryService historyService;
+
     @GetMapping("/admin/member/list.do")
     public String list(Model model, MemberParam parameter) {
         
@@ -32,7 +36,7 @@ public class AdminMemberController extends BaseController {
         }
         String queryString = parameter.getQueryString();
         String pagerHtml = getPaperHtml(totalCount, parameter.getPageSize(), parameter.getPageIndex(), queryString);
-        
+
         model.addAttribute("list", members);
         model.addAttribute("totalCount", totalCount);
         model.addAttribute("pager", pagerHtml);
@@ -44,17 +48,19 @@ public class AdminMemberController extends BaseController {
     public String detail(Model model, MemberParam parameter) {
         
         parameter.init();
-        
+
         MemberDto member = memberService.detail(parameter.getUserId());
         model.addAttribute("member", member);
+
+        List<HistoryDto> historyList = historyService.list(parameter.getUserId());
+        model.addAttribute("histories", historyList);
        
         return "admin/member/detail";
     }
     
     @PostMapping("/admin/member/status.do")
     public String status(Model model, MemberInput parameter) {
-    
-        
+
         boolean result = memberService.updateStatus(parameter.getUserId(), parameter.getUserStatus());
         
         return "redirect:/admin/member/detail.do?userId=" + parameter.getUserId();
@@ -69,8 +75,4 @@ public class AdminMemberController extends BaseController {
         
         return "redirect:/admin/member/detail.do?userId=" + parameter.getUserId();
     }
-    
-    
-    
-    
 }

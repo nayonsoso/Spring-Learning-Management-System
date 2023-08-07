@@ -78,10 +78,7 @@ public class AdminCourseController extends BaseController {
         
         return "admin/course/add";
     }
-    
-    
-    
-    
+
     private String[] getNewSaveFile(String baseLocalPath, String baseUrlPath, String originalFilename) {
     
         LocalDate now = LocalDate.now();
@@ -130,8 +127,8 @@ public class AdminCourseController extends BaseController {
         if (file != null) {
             String originalFilename = file.getOriginalFilename();
             
-            String baseLocalPath = "/Users/kyutaepark/Documents/sources/zerobase/fastlms/files";
-            String baseUrlPath = "/files";
+            String baseLocalPath = "C:/Users/panda/Documents/minicampus";
+            String baseUrlPath = "/minicampus";
             
             String[] arrFilename = getNewSaveFile(baseLocalPath, baseUrlPath, originalFilename);
     
@@ -178,6 +175,4 @@ public class AdminCourseController extends BaseController {
         
         return "redirect:/admin/course/list.do";
     }
-    
-    
 }

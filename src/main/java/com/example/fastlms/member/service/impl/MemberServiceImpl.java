@@ -1,6 +1,8 @@
 package com.example.fastlms.member.service.impl;
 
 import com.example.fastlms.components.MailComponents;
+import com.example.fastlms.history.entity.History;
+import com.example.fastlms.history.repository.HistoryRepository;
 import com.example.fastlms.member.exception.MemberNotEmailAuthException;
 import com.example.fastlms.member.exception.MemberStopUserException;
 import com.example.fastlms.member.repository.MemberRepository;
@@ -35,10 +37,12 @@ import java.util.UUID;
 public class MemberServiceImpl implements MemberService {
     
     private final MemberRepository memberRepository;
+    private final HistoryRepository historyRepository;
     private final MailComponents mailComponents;
-    
+
     private final MemberMapper memberMapper;
-    
+
+
     /**
      * 회원 가입
      */
@@ -71,7 +75,6 @@ public class MemberServiceImpl implements MemberService {
         String text = "<p>fastlms 사이트 가입을 축하드립니다.<p><p>아래 링크를 클릭하셔서 가입을 완료 하세요.</p>"
                 + "<div><a target='_blank' href='http://localhost:8080/member/email-auth?id=" + uuid + "'> 가입 완료 </a></div>";
         System.out.println(parameter.getUserId());
-        System.out.println(text);/////////////////////
         mailComponents.sendMail(email, subject, text);
         
         return true;
@@ -81,7 +84,6 @@ public class MemberServiceImpl implements MemberService {
     public boolean emailAuth(String uuid) {
         
         Optional<Member> optionalMember = memberRepository.findByEmailAuthKey(uuid);
-        System.out.println(uuid);
 
         if (!optionalMember.isPresent()) {
             return false;
@@ -302,6 +304,12 @@ public class MemberServiceImpl implements MemberService {
         }
 
         return new User(member.getUserId(), member.getPassword(), grantedAuthorities);
+    }
+
+    public void saveLastLogin(String userId){
+        Member member = memberRepository.findById(userId).get();
+        member.setLastLogin(LocalDateTime.now());
+        memberRepository.save(member);
     }
 }
 
